@@ -1,78 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang ="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Hoja de Vida</title>
-    <style>
-        body {
-            background: linear-gradient(to bottom, #3498db, #2980b9);
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            text-align: center;
-            padding: 50px 0;
-        }
-
-        header img {
-            width: 150px; /* Ancho de la imagen */
-            height: 150px; /* Altura de la imagen */
-            border-radius: 50%; /* Para hacer la imagen circular */
-            object-fit: cover; /* Para asegurarse de que la imagen se ajuste correctamente */
-            margin: 0 auto; /* Centrar la imagen horizontalmente */
-            display: block; /* Hacer que la imagen sea un bloque para centrarla verticalmente */
-        }
-        
-        header h1 {
-            font-size: 36px;
-        }
-        
-        header p {
-            font-size: 18px;
-        }
-        
-        section {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            margin: 10px;
-            border-radius: 5px;
-        }
-        
-        h2 {
-            color: #3498db;
-        }
-        
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        li {
-            margin-bottom: 10px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        footer p {
-            font-size: 16px;
-        }
-    </style>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatiblle" content="IE=egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        <img src="foto perfil.jpeg" alt="Mi Foto">
-        <h1>Mi Nombre</h1>
-        <p>Descripción breve sobre ti</p>
-    </header>
-    
-    <!-- Resto del contenido -->
-    
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Carlos Andres</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#nicio">INICIO</a></li>
+                    <li><a href="#Sobremi">Sobre mí</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#Curriculum">Curriculum</a></li>
+                    <li><a href="#Portafolio">Portafolio</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>  
+            <div class="nav-responsive">
+            <i class="fa-solid fa-bars"></i>
+            </div> 
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+
+            </div>
+            <h1>Carlos Andres Cuartas</h1>
+            <h2>Programador JR</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/carlos-andres-cuartas-villa-08091a253/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.link/bcde8b"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Carlos Cuartas</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nisi! Quasi nisi quisquam sed non, voluptatibus voluptatum suscipit delectus tempora harum doloremque officiis corporis dignissimos, adipisci aperiam pariatur ullam distinctio.</p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            25/04/2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 3116807501
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Carlosrp1918@gmail.com.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Auxiliar TI</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>Ver</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>Baloncesto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
 </body>
 </html>
